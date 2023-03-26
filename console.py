@@ -9,7 +9,7 @@ class HBNBCommand(cmd.Cmd):
     prompt = '(hbnb)'
     
     '''Methods to close console'''
-   def do_quit(self, arg):
+    def do_quit(self, arg):
         """Quit command to exit the program."""
         return True
 
@@ -22,7 +22,7 @@ class HBNBCommand(cmd.Cmd):
         """Do nothing upon receiving an empty line."""
         pass
 
-     def default(self, arg):
+    def default(self, arg):
         """Default behavior for cmd module when input is invalid"""
         argdict = {
             "all": self.do_all,
