@@ -2,10 +2,10 @@
 """ Tests for the City class"""
 
 import unittest
-import datetime import datetime
-import time import sleep
+from datetime import datetime
+from time import sleep
 import json
-import models.engine.file_storage import FileStorage
+from models.engine.file_storage import FileStorage
 
 
 class test_fileStorage(unittest.TestCase):
