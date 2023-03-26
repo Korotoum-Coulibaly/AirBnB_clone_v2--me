@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 
-from basemodel import  BaseModel
+from models.base_model import  BaseModel
 
 class Amenity(BaseModel):
     '''Amenity Table Models'''

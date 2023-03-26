@@ -1,8 +1,8 @@
 #!/usr/bin/pyhton3
 
-from basemodel import BaseModel
+from models.base_model import BaseModel
 
-class user(BaseModel):
+class User(BaseModel):
     '''Table User Model'''
     email = ""
     password = ""
