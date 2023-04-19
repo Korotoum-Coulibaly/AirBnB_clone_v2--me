@@ -80,6 +80,16 @@ class HBNBCommand(cmd.Cmd):
                     return argdict[command[0]](call)
         print("*** Unknown syntax: {}".format(arg))
         return False
+    
+    def do_count(self, arg):
+        """Retrieve the number of instances of a given class"""
+        argC = parse(arg)
+        count = 0
+        for obj in storage.all().values():
+            if argC[0] == obj.__class__.__name__:
+                count += 1
+            print(count)
+
 
     def do_create(self, arg):
         """create a new instance of BaseModel,saves it to the Json file and prints the id"""
