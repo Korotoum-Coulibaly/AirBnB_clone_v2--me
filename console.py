@@ -5,7 +5,7 @@ import cmd, sys
 
 class HBNBCommand(cmd.Cmd):
     '''console execution'''
-    intro = 'welcome to the AirBnB console make by Coulby and Akinla. \n'
+   # intro = 'welcome to the AirBnB console make by Coulby and Akinla. \n'
     prompt = '(hbnb)'
     
     '''Methods to close console'''
