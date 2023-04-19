@@ -1,4 +1,4 @@
-# 0x00.AirBnB clone - The console
+# 0x00.AirBnB clone - MySQL
 
 ---
 ## Ressources
@@ -18,16 +18,16 @@
 ## Learning Objectives
 
 Explain: 
-* How to create a python package
-* How to create a command interpreter in Python using the cmd module
-* What is Unit testing and how to implement in a large project
-* How to serialize and deserialize a class
-* How to write and read a Json file
-* How to manage datetime
-* What is an UUID
+* What is Unit testing and how to implement it in a large project
 * What is *args and how to use it
-* What is *kwargs and how to use it
+* What is **kwargs and how to use it
 * How to handle named arguments in a function
+* How to create a MySQL database
+* How to create a MySQL user and grant it privilèges
+* What ORM means
+* How to map a python class to a MySQL table
+* How to handle 2 different storage engines with the same codebase
+* How to use environnment variables
 
 ---
 ## Description of the project
@@ -40,14 +40,12 @@ After 4 months, you will have a complete web application composed by:
 * A database or files that store data(data = objects)
 * An API that provides a communication interface between the front-end and your date(retrieve, create, delete, update them)
 
-for this first steps i make The console
-### The console
+for this third steps i make The SQL Storage in MYSQL
+### SQL STORAGE
 
-This first piece is to manipulate a powerful storage system.This storage engine will give us an abstraction between "My object" and "How they are stored and persisted".This means: from your console code(the command interpreter itself) and from the front-end and RestAPI you will build later, you won't have to pay attention (take care) of how your objects are stored.
-
-This abstration will also allow you to change the type of storage easily without updating all of your codebase.
-The console will be tool to validate this storage engine https://s3.amazonaws.com/alx-intranet.hbtn.io/uploads/medias/2018/6/815046647d23428a14ca.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOUSBVO6H7D%2F20230320%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20230320T095827Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=e8d429c904ce88764053d43597cd3ce2379aa4a8a5d80f2e121795bdb39f5f2a
-
+* Replace the file storage by a Database Storage
+* map your models to a table in database by using an ORM
+ 
 ---
 ## Important
 
